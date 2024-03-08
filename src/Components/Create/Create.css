@@ -1,32 +1,32 @@
+
 .centerDiv {
-    border: 1px solid black;
-    width: max-content;
-    padding: 50px;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 6px;
-  }
-  .input {
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    outline-color: transparent;
-  }
-  
-  .uploadBtn {
-    margin-top: 30px;
-    width: 100%;
-    height: 48px;
-    /* border-color: transparent; */
-    background-color: #002f34;
-    color: whitesmoke;
-    font-weight: 900;
-  }
-  .uploadBtn:hover {
-    background-color: white;
-    color: #002f34;
-    border: 2px solid #002f34;
-  }
-  
+  border: 1px solid #ddd; /* Light gray border */
+  width: 400px; /* Fixed width for consistency */
+  padding: 20px; /* Reduce padding for a more concise form */
+  margin: 0 auto; /* Center horizontally without absolute positioning */
+  border-radius: 4px; /* Subtle rounded corners */
+  background-color: #f5f5f5; /* Light background for better readability */
+}
+
+.input {
+  border: 1px solid #ccc; /* Consistent border color */
+  padding: 8px; /* Adjust padding for a balanced look */
+  width: 100%; /* Ensure inputs span the full width */
+}
+
+.uploadBtn {
+  margin-top: 20px; /* Maintain spacing after form fields */
+  width: 100%;
+  height: 40px; /* Adjust button height for better proportions */
+  background-color: #3498db; /* Blue primary color */
+  color: #fff; /* White text for better contrast */
+  font-weight: bold; /* Bold text for emphasis */
+  border: none; /* Remove border for a cleaner look */
+  border-radius: 4px; /* Match form element rounding */
+  cursor: pointer; /* Indicate clickable behavior */
+}
+
+.uploadBtn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  color: #fff; /* Maintain white text on hover */
+}

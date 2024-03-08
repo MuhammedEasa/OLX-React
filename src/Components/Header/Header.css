@@ -162,3 +162,19 @@
     display: none;
   }
 }
+.logout-button {
+  cursor: pointer;
+  background-color: whitesmoke; /* OLX brand color, adjust as needed */
+  color: black; /* White text color, adjust as needed */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 5px solid #23e5db;
+  /* Optional hover effect */
+  &:hover {
+    background-color: #cc3700; /* Darker shade on hover, adjust as needed */
+  }
+}
