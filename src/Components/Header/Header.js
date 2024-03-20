@@ -16,6 +16,9 @@ function Header() {
     firebase.auth().signOut();
     history.push('/login');
   };
+  const handleLogin = () => {
+    history.push('/login');
+  };
   const gotoCreate = ()=>{
     history.push('/create');
   }
@@ -46,8 +49,7 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span>{user ? `Welcome ${user.displayName}`:'Login'}</span>
-          <hr />
+        <span>{user ? `Welcome ${user.displayName}` : <button onClick={handleLogin}>Login</button>}</span>
         </div>
  { user &&    <span className="logout-button" onClick={handleLogout}>
       Logout

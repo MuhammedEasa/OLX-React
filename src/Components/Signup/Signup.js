@@ -12,6 +12,9 @@ export default function Signup() {
   const [userPhone, setUserPhone] = useState("");
   const [userPassword, setUserPassword] = useState("");
   const { firebase } = useContext(FirebaseContext);
+  const handleLogin = () => {
+    history.push('/login');
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     let userResult;
@@ -93,7 +96,7 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <a>Login</a>
+        <a onClick={handleLogin}>Login</a>
       </div>
     </div>
   );

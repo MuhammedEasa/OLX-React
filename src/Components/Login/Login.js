@@ -9,6 +9,9 @@ function Login() {
   const [email,setEmail] = useState('')
   const [password,setPassword] = useState('')
   const {firebase} = useContext(FirebaseContext)
+  const handleSignup = () => {
+    history.push('/signup');
+  };
   const handleLogin = (e)=>{
       e.preventDefault();
       firebase.auth().signInWithEmailAndPassword(email,password).then(()=>{
@@ -49,7 +52,7 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a>Signup</a>
+        <a onClick={handleSignup}>Signup</a>
       </div>
     </div>
   );
